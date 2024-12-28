@@ -1,0 +1,3 @@
+[console_scripts]
+gesture_detect = gesture_control.gesture_recog_node:main
+

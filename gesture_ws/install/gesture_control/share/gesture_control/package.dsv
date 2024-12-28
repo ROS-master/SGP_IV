@@ -1,0 +1,6 @@
+source;share/gesture_control/hook/pythonpath.ps1
+source;share/gesture_control/hook/pythonpath.dsv
+source;share/gesture_control/hook/pythonpath.sh
+source;../../build/gesture_control/share/gesture_control/hook/pythonpath_develop.ps1
+source;../../build/gesture_control/share/gesture_control/hook/pythonpath_develop.dsv
+source;../../build/gesture_control/share/gesture_control/hook/pythonpath_develop.sh
