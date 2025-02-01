@@ -1,3 +1,4 @@
 [console_scripts]
-gesture_detect = gesture_control.gesture_recog_node:main
+gesture_control = gesture_control.gesture_control:main
+gesture_detect = gesture_control.gesture_detect:main
 

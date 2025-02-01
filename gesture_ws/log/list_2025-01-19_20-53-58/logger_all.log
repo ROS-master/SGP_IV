@@ -1,0 +1,70 @@
+[0.553s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list']
+[0.553s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=False, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a5f638b55d0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7a5f638b4580>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7a5f638b4580>>, mixin_verb=('list',))
+[1.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.795s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yash/SGP_IV/gesture_ws'
+[1.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.797s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.797s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.797s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.797s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.797s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.797s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.845s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.847s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.848s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.849s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.850s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.851s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.852s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['ignore', 'ignore_ament_install']
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'ignore'
+[1.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'ignore_ament_install'
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['colcon_pkg']
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'colcon_pkg'
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['colcon_meta']
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'colcon_meta'
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['ros']
+[1.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'ros'
+[1.867s] DEBUG:colcon.colcon_core.package_identification:Found ROS schema reference in package manifest in 'src/gesture_control'
+[1.867s] WARNING:colcon.colcon_core.package_identification:Failed to parse ROS package manifest in 'src/gesture_control': Error(s) in package 'src/gesture_control/package.xml':
+Invalid email "ygnasit.gmail.com" for person "yash"
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['cmake', 'python']
+[1.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'cmake'
+[1.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'python'
+[1.868s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/gesture_control' passes arguments to the setup() function which requires a different identification extension than 'python'
+[1.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['python_setup_py']
+[1.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'python_setup_py'
+[3.389s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gesture_control' with type 'python' and name 'gesture_control'
+[3.389s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.390s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
