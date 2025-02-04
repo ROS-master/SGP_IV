@@ -1,0 +1,1 @@
+/home/yash/SGP_IV/gesture_ws/build/niyantrak_description/ament_cmake_core/niyantrak_descriptionConfig-version.cmake

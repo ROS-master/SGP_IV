@@ -1,0 +1,147 @@
+[0.415s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.415s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c56de3bcb80>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c56de3bc250>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c56de3bc250>>, mixin_verb=('build',))
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.222s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yash/SGP_IV/gesture_ws'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.256s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.258s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.258s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.258s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.258s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.258s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['ignore', 'ignore_ament_install']
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'ignore'
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'ignore_ament_install'
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['colcon_pkg']
+[1.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'colcon_pkg'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['colcon_meta']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'colcon_meta'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extensions ['ros']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/gesture_control) by extension 'ros'
+[1.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gesture_control' with type 'ros.ament_python' and name 'gesture_control'
+[1.270s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extensions ['ignore', 'ignore_ament_install']
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extension 'ignore'
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extension 'ignore_ament_install'
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extensions ['colcon_pkg']
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extension 'colcon_pkg'
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extensions ['colcon_meta']
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extension 'colcon_meta'
+[1.271s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extensions ['ros']
+[1.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extension 'ros'
+[1.273s] DEBUG:colcon.colcon_core.package_identification:Found ROS schema reference in package manifest in 'src/niyantrak_description'
+[1.274s] WARNING:colcon.colcon_core.package_identification:Failed to parse ROS package manifest in 'src/niyantrak_description': Error(s) in package 'src/niyantrak_description/package.xml':
+Invalid email "ygnasit.gmail.com" for person "yash"
+[1.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extensions ['cmake', 'python']
+[1.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extension 'cmake'
+[1.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/niyantrak_description) by extension 'python'
+[1.278s] DEBUG:colcon.colcon_core.package_identification:Package 'src/niyantrak_description' with type 'cmake' and name 'niyantrak_description'
+[1.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.279s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.346s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/usr/lib/x86_64-linux-gnu/cmake/box2D' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.348s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/yash/SGP_IV/gesture_ws/install
+[1.350s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/yash/Agrobot/agri_ws/install
+[1.351s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/yash/tensor_ws/install
+[1.352s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/yash/rl_ws/install
+[1.354s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/yash/ros2_ws/install
+[1.355s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/yash/python_ws/install
+[1.356s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/yash/skid_ws/install
+[1.358s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/yash/eyrc24_ws/install
+[1.363s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 510 installed packages in /opt/ros/humble
+[1.373s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.554s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_args' from command line to 'None'
+[1.554s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_target' from command line to 'None'
+[1.554s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.554s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_clean_cache' from command line to 'False'
+[1.554s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_clean_first' from command line to 'False'
+[1.554s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'cmake_force_configure' from command line to 'False'
+[1.554s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'ament_cmake_args' from command line to 'None'
+[1.554s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'catkin_cmake_args' from command line to 'None'
+[1.554s] Level 5:colcon.colcon_core.verb:set package 'gesture_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.555s] DEBUG:colcon.colcon_core.verb:Building package 'gesture_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yash/SGP_IV/gesture_ws/build/gesture_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yash/SGP_IV/gesture_ws/install/gesture_control', 'merge_install': False, 'path': '/home/yash/SGP_IV/gesture_ws/src/gesture_control', 'symlink_install': True, 'test_result_base': None}
+[1.556s] Level 5:colcon.colcon_core.verb:set package 'niyantrak_description' build argument 'cmake_args' from command line to 'None'
+[1.556s] Level 5:colcon.colcon_core.verb:set package 'niyantrak_description' build argument 'cmake_target' from command line to 'None'
+[1.556s] Level 5:colcon.colcon_core.verb:set package 'niyantrak_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.556s] Level 5:colcon.colcon_core.verb:set package 'niyantrak_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.556s] Level 5:colcon.colcon_core.verb:set package 'niyantrak_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.556s] Level 5:colcon.colcon_core.verb:set package 'niyantrak_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.556s] Level 5:colcon.colcon_core.verb:set package 'niyantrak_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.556s] Level 5:colcon.colcon_core.verb:set package 'niyantrak_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.556s] Level 5:colcon.colcon_core.verb:set package 'niyantrak_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.556s] DEBUG:colcon.colcon_core.verb:Building package 'niyantrak_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yash/SGP_IV/gesture_ws/install/niyantrak_description', 'merge_install': False, 'path': '/home/yash/SGP_IV/gesture_ws/src/niyantrak_description', 'symlink_install': True, 'test_result_base': None}
+[1.557s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.559s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.559s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/yash/SGP_IV/gesture_ws/src/gesture_control' with build type 'ament_python'
+[1.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('gesture_control', 'ament_prefix_path')
+[1.566s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yash/SGP_IV/gesture_ws/install/gesture_control/share/gesture_control/hook/ament_prefix_path.ps1'
+[1.568s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yash/SGP_IV/gesture_ws/install/gesture_control/share/gesture_control/hook/ament_prefix_path.dsv'
+[1.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yash/SGP_IV/gesture_ws/install/gesture_control/share/gesture_control/hook/ament_prefix_path.sh'
+[1.571s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.572s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.591s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yash/SGP_IV/gesture_ws/src/niyantrak_description'
+[1.592s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.592s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.813s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/yash/SGP_IV/gesture_ws/src/gesture_control'
+[2.815s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.815s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description': /usr/bin/cmake /home/yash/SGP_IV/gesture_ws/src/niyantrak_description -DCMAKE_INSTALL_PREFIX=/home/yash/SGP_IV/gesture_ws/install/niyantrak_description
+[5.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yash/SGP_IV/gesture_ws/build/gesture_control': PYTHONPATH=/home/yash/SGP_IV/gesture_ws/build/gesture_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yash/SGP_IV/gesture_ws/build/gesture_control/build --no-deps symlink_data
+[5.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description' returned '1': /usr/bin/cmake /home/yash/SGP_IV/gesture_ws/src/niyantrak_description -DCMAKE_INSTALL_PREFIX=/home/yash/SGP_IV/gesture_ws/install/niyantrak_description
+[8.267s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.267s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.268s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[8.268s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.291s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.292s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.292s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.338s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.339s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yash/SGP_IV/gesture_ws/install/local_setup.ps1'
+[8.343s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yash/SGP_IV/gesture_ws/install/_local_setup_util_ps1.py'
+[8.350s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yash/SGP_IV/gesture_ws/install/setup.ps1'
+[8.359s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yash/SGP_IV/gesture_ws/install/local_setup.sh'
+[8.362s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yash/SGP_IV/gesture_ws/install/_local_setup_util_sh.py'
+[8.365s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yash/SGP_IV/gesture_ws/install/setup.sh'
+[8.375s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yash/SGP_IV/gesture_ws/install/local_setup.bash'
+[8.378s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yash/SGP_IV/gesture_ws/install/setup.bash'
+[8.387s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yash/SGP_IV/gesture_ws/install/local_setup.zsh'
+[8.390s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yash/SGP_IV/gesture_ws/install/setup.zsh'

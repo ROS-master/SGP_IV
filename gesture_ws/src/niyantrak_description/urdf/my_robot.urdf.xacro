@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="lidar.xacro" />
+    <xacro:include filename="camera.xacro" />
+    <!-- <xacro:include filename="depth_camera.xacro" /> -->
+    <xacro:include filename="diff_drive.xacro" />
+
+    <xacro:property name="m1" value="5.0" />
+    <xacro:property name="l" value="0.6" />
+    <xacro:property name="w" value="0.4" />
+    <xacro:property name="h" value="0.2" />
+
+    <xacro:property name="m" value="0.2" />
+    <xacro:property name="r" value="0.1" />
+    <xacro:property name="L" value="0.05" />
+
+
+
+    <!-- Materials -->
+    <material name="blue">
+        <color rgba="0 0 0.5 1" />
+    </material>
+
+    <material name="grey">
+        <color rgba="0.5 0.5 0.5 1" />
+    </material>
+
+    <!-- Links -->
+    <link name="base_footprint" >
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </visual>
+    </link>
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+            <material name="blue" />
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+            <mass value="${m1}" /> <!-- Example mass in kg -->
+            <inertia
+                ixx="${(m1/12) *(h*h + l*l)}" 
+                iyy="${(m1/12) *(h*h + w*w)}" 
+                izz="${(m1/12) *(w*w + l*l)}"
+                ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+
+    <link name="right_front_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${r}" length="${L}" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <material name="grey" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+        </collision>
+        <inertial>
+            <mass value="${m}" /> <!-- Example mass in kg -->
+            <inertia
+                ixx="${(m/12) * (3*r*r + L*L)}" 
+                iyy="${(m/12) * (3*r*r + L*L)}" 
+                izz="${(m/2) * (r*r)}"
+                ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+
+    <link name="right_back_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <material name="grey" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+        </collision>
+        <inertial>
+            <mass value="0.2" />
+            <inertia
+                ixx="${(m/12) * (3*r*r + L*L)}" 
+                iyy="${(m/12) * (3*r*r + L*L)}" 
+                izz="${(m/2) * (r*r)}"
+                ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+
+    <link name="left_front_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <material name="grey" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+        </collision>
+        <inertial>
+            <mass value="0.2" />
+            <inertia
+                ixx="${(m/12) * (3*r*r + L*L)}" 
+                iyy="${(m/12) * (3*r*r + L*L)}" 
+                izz="${(m/2) * (r*r)}"
+                ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+
+    <link name="left_back_wheel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <material name="grey" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+        </collision>
+        <inertial>
+            <mass value="0.2" />
+            <inertia
+                ixx="${(m/12) * (3*r*r + L*L)}" 
+                iyy="${(m/12) * (3*r*r + L*L)}" 
+                izz="${(m/2) * (r*r)}"
+                ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+
+    <!-- Joints -->
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="base_link" />
+        <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="base_right_front_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="right_front_wheel_link" />
+        <origin xyz="-0.15 -0.225 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+
+    <joint name="base_left_front_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="left_front_wheel_link" />
+        <origin xyz="-0.15 0.225 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="base_right_back_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="right_back_wheel_link" />
+        <origin xyz="0.15 -0.225 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="base_left_back_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="left_back_wheel_link" />
+        <origin xyz="0.15 0.225 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <!--gazebo coloring-->
+    <!-- <gazebo reference="base_link">
+        <material> Gazebo/Blue </material>
+    </gazebo>
+
+    <gazebo reference="right_front_wheel_link">
+        <material> Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="right_back_wheel_link">
+        <material> Gazebo/White </material>
+    </gazebo>
+
+    <gazebo reference="left_back_wheel_link">
+        <material> Gazebo/White </material>
+    </gazebo>
+
+    <gazebo reference="left_front_wheel_link">
+        <material> Gazebo/White </material>
+    </gazebo> -->
+    <!-- ros_control plugin -->
+        
+    <!-- <gazebo> -->
+    <!-- 
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <odometryRate>20.0</odometryRate>
+      <robotBaseFrame>chasis</robotBaseFrame>
+    </plugin> -->
+        <!-- <plugin name="SkidSteerDrivePlugin" filename="libgazebo_ros_skid_steer_drive.so">
+            <dds_domain_id>0</dds_domain_id>
+
+            <topic_name_twist>cmd_vel</topic_name_twist>
+
+            <topic_name_odometry>odom</topic_name_odometry>
+
+            <topic_name_joint>joint</topic_name_joint>
+
+            <right_front_joint>base_right_front_wheel_joint</right_front_joint>
+            <right_rear_joint>base_right_back_wheel_joint</right_rear_joint>
+            <left_front_joint>base_left_front_wheel_joint</left_front_joint>
+            <left_rear_joint>base_left_back_wheel_joint</left_rear_joint>
+
+            <wheel_separation>0.5</wheel_separation>
+            <wheel_diameter>0.2</wheel_diameter>
+            <wheel_torque>5.0</wheel_torque>
+            <update_rate>50</update_rate>
+            <covariance_x>0.0001</covariance_x>
+            <covariance_y>0.0001</covariance_y>
+            <covariance_yaw>0.01</covariance_yaw>
+
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+
+            <odometry_topic>odom</odometry_topic>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_footprint</robot_base_frame>
+        </plugin> -->
+
+    <!-- <gazebo>
+        <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+            <update_rate>100.0</update_rate>
+            <robotNamespace>/</robotNamespace>
+            <right_front_joint>base_right_front_wheel_joint</right_front_joint>
+            <right_rear_joint>base_right_back_wheel_joint</right_rear_joint>
+            <left_front_joint>base_left_front_wheel_joint</left_front_joint>
+            <left_rear_joint>base_left_back_wheel_joint</left_rear_joint>
+
+            <wheel_separation>0.5</wheel_separation>
+            <wheel_diameter>0.2</wheel_diameter>
+
+            <robot_base_frame>base_footprint</robot_base_frame>
+            <torque>20</torque>
+            <topic_name>cmd_vel</topic_name>
+            <broadcastTF>false</broadcastTF>
+        </plugin>
+    </gazebo> -->
+    
+
+  
+</robot>
+

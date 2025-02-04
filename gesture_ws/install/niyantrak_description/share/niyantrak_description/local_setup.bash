@@ -1,0 +1,1 @@
+/home/yash/SGP_IV/gesture_ws/build/niyantrak_description/ament_cmake_environment_hooks/local_setup.bash

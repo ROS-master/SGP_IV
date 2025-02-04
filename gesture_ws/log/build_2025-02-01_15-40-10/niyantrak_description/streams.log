@@ -1,0 +1,44 @@
+[1.265s] Invoking command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description': /usr/bin/cmake /home/yash/SGP_IV/gesture_ws/src/niyantrak_description -DCMAKE_INSTALL_PREFIX=/home/yash/SGP_IV/gesture_ws/install/niyantrak_description
+[1.491s] -- The C compiler identification is GNU 11.4.0
+[1.710s] -- The CXX compiler identification is GNU 11.4.0
+[1.742s] -- Detecting C compiler ABI info
+[1.982s] -- Detecting C compiler ABI info - done
+[2.013s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.024s] -- Detecting C compile features
+[2.027s] -- Detecting C compile features - done
+[2.039s] -- Detecting CXX compiler ABI info
+[2.315s] -- Detecting CXX compiler ABI info - done
+[2.359s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.360s] -- Detecting CXX compile features
+[2.363s] -- Detecting CXX compile features - done
+[2.396s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.135s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.964s] Error parsing '/home/yash/SGP_IV/gesture_ws/src/niyantrak_description/package.xml':
+[4.184s] Traceback (most recent call last):
+[4.184s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[4.184s]     main()
+[4.185s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[4.185s]     raise e
+[4.185s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[4.186s]     package = parse_package_string(
+[4.186s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 788, in parse_package_string
+[4.195s]     pkg.validate(warnings=warnings)
+[4.195s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 330, in validate
+[4.196s]     raise InvalidPackage('\n'.join(errors), self.filename)
+[4.197s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/yash/SGP_IV/gesture_ws/src/niyantrak_description/package.xml':
+[4.197s] Invalid email "ygnasit.gmail.com" for person "yash"
+[4.253s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[4.254s]   execute_process(/usr/bin/python3
+[4.254s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[4.255s]   /home/yash/SGP_IV/gesture_ws/src/niyantrak_description/package.xml
+[4.255s]   /home/yash/SGP_IV/gesture_ws/build/niyantrak_description/ament_cmake_core/package.cmake)
+[4.256s]   returned error code 1
+[4.256s] Call Stack (most recent call first):
+[4.256s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[4.256s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[4.257s]   CMakeLists.txt:19 (ament_package)
+[4.257s] 
+[4.257s] [0m
+[4.258s] -- Configuring incomplete, errors occurred!
+[4.258s] See also "/home/yash/SGP_IV/gesture_ws/build/niyantrak_description/CMakeFiles/CMakeOutput.log".
+[4.271s] Invoked command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description' returned '1': /usr/bin/cmake /home/yash/SGP_IV/gesture_ws/src/niyantrak_description -DCMAKE_INSTALL_PREFIX=/home/yash/SGP_IV/gesture_ws/install/niyantrak_description

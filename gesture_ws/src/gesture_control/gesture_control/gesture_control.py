@@ -11,8 +11,8 @@ class GestureControlNode(Node):
         self.subscription_status = self.create_subscription(String, '/robot_status', self.status_callback, 10)
         self.publisher_cmd = self.create_publisher(Twist, '/cmd_vel', 10)
 
-        self.robot_status = "Locked"  # Default status
-        self.last_gesture = "Stop"   # Last received gesture (default stop)
+        self.robot_status = "Locked" 
+        self.last_gesture = "Stop"  
 
     def status_callback(self, msg):
         """Update the robot's lock/unlock status."""
@@ -30,11 +30,10 @@ class GestureControlNode(Node):
         twist = Twist()
 
         if self.robot_status == "Locked":
-            # When locked, stop the robot
+           
             twist.linear.x = 0.0
             twist.angular.z = 0.0
         else:
-            # Interpret gestures when unlocked
             if self.last_gesture == "Forward":
                 twist.linear.x = 0.5
                 twist.angular.z = 0.0

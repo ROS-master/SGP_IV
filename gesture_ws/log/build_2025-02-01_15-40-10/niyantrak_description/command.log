@@ -1,0 +1,2 @@
+Invoking command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description': /usr/bin/cmake /home/yash/SGP_IV/gesture_ws/src/niyantrak_description -DCMAKE_INSTALL_PREFIX=/home/yash/SGP_IV/gesture_ws/install/niyantrak_description
+Invoked command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description' returned '1': /usr/bin/cmake /home/yash/SGP_IV/gesture_ws/src/niyantrak_description -DCMAKE_INSTALL_PREFIX=/home/yash/SGP_IV/gesture_ws/install/niyantrak_description
