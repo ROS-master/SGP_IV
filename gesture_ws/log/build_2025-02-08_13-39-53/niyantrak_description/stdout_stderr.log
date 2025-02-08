@@ -1,0 +1,35 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/4wheel.urdf.xacro
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/camera.xacro
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/diff_drive.xacro
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/lidar.xacro
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/my_robot.urdf.xacro
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//launch/display.launch.py
+-- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//launch/map.launch.py
+-- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//launch/nav.launch.py
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//rviz/urdf.rviz
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat.world
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/boundry/model.config
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/boundry/model.sdf
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/model.config
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/model.sdf
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/test_world.world
+-- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/turtlebot3_house.world
+-- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//param/robo.yaml
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//config/gazebo_params.yaml
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/ament_index/resource_index/package_run_dependencies/niyantrak_description
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/ament_index/resource_index/parent_prefix_path/niyantrak_description
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/environment/path.sh
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/environment/path.dsv
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/local_setup.bash
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/local_setup.sh
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/local_setup.zsh
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/local_setup.dsv
+-- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/package.dsv
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/ament_index/resource_index/packages/niyantrak_description
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/cmake/niyantrak_descriptionConfig.cmake
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/cmake/niyantrak_descriptionConfig-version.cmake
+-- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/package.xml

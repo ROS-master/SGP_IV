@@ -1,0 +1,39 @@
+[1.558s] Invoking command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yash/python_ws/install/turtlesim_catch_all:/home/yash/python_ws/install/my_py_pkg:/home/yash/SGP_IV/gesture_ws/install/gesture_control:/home/yash/tensor_ws/install/warehouse_sim:/home/yash/rl_ws/install/serp_rl:/home/yash/skid_ws/install/ackerman:/home/yash/eyrc24_ws/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/yash/SGP_IV/gesture_ws/build/niyantrak_description -- -j8 -l8
+[1.684s] Invoked command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yash/python_ws/install/turtlesim_catch_all:/home/yash/python_ws/install/my_py_pkg:/home/yash/SGP_IV/gesture_ws/install/gesture_control:/home/yash/tensor_ws/install/warehouse_sim:/home/yash/rl_ws/install/serp_rl:/home/yash/skid_ws/install/ackerman:/home/yash/eyrc24_ws/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/yash/SGP_IV/gesture_ws/build/niyantrak_description -- -j8 -l8
+[1.718s] Invoking command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yash/python_ws/install/turtlesim_catch_all:/home/yash/python_ws/install/my_py_pkg:/home/yash/SGP_IV/gesture_ws/install/gesture_control:/home/yash/tensor_ws/install/warehouse_sim:/home/yash/rl_ws/install/serp_rl:/home/yash/skid_ws/install/ackerman:/home/yash/eyrc24_ws/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/yash/SGP_IV/gesture_ws/build/niyantrak_description
+[1.746s] -- Install configuration: ""
+[1.748s] -- Execute custom install script
+[1.750s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/4wheel.urdf.xacro
+[1.750s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/camera.xacro
+[1.750s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/diff_drive.xacro
+[1.751s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/lidar.xacro
+[1.751s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/my_robot.urdf.xacro
+[1.752s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//launch/display.launch.py
+[1.752s] -- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//launch/map.launch.py
+[1.782s] -- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//launch/nav.launch.py
+[1.814s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//rviz/urdf.rviz
+[1.815s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat.world
+[1.816s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/boundry/model.config
+[1.817s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/boundry/model.sdf
+[1.817s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/model.config
+[1.818s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/model.sdf
+[1.818s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/test_world.world
+[1.819s] -- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/turtlebot3_house.world
+[1.850s] -- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//param/robo.yaml
+[1.882s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//config/gazebo_params.yaml
+[1.882s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/ament_index/resource_index/package_run_dependencies/niyantrak_description
+[1.883s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/ament_index/resource_index/parent_prefix_path/niyantrak_description
+[1.884s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/environment/ament_prefix_path.sh
+[1.885s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/environment/ament_prefix_path.dsv
+[1.885s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/environment/path.sh
+[1.886s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/environment/path.dsv
+[1.887s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/local_setup.bash
+[1.887s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/local_setup.sh
+[1.888s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/local_setup.zsh
+[1.888s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/local_setup.dsv
+[1.889s] -- Symlinking: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/package.dsv
+[1.921s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/ament_index/resource_index/packages/niyantrak_description
+[1.922s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/cmake/niyantrak_descriptionConfig.cmake
+[1.923s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/cmake/niyantrak_descriptionConfig-version.cmake
+[1.924s] -- Up-to-date symlink: /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description/package.xml
+[1.930s] Invoked command in '/home/yash/SGP_IV/gesture_ws/build/niyantrak_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yash/python_ws/install/turtlesim_catch_all:/home/yash/python_ws/install/my_py_pkg:/home/yash/SGP_IV/gesture_ws/install/gesture_control:/home/yash/tensor_ws/install/warehouse_sim:/home/yash/rl_ws/install/serp_rl:/home/yash/skid_ws/install/ackerman:/home/yash/eyrc24_ws/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/yash/SGP_IV/gesture_ws/build/niyantrak_description

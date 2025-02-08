@@ -14,11 +14,11 @@ def generate_launch_description():
         "my_robot.urdf.xacro"
     ])
     
-    rviz_config_path = PathJoinSubstitution([
-        FindPackageShare("niyantrak_description"),
-        "rviz",
-        "urdf.rviz"
-    ])
+    # rviz_config_path = PathJoinSubstitution([
+    #     FindPackageShare("niyantrak_description"),
+    #     "rviz",
+    #     "urdf.rviz"
+    # ])
     
     gazebo_params_file = PathJoinSubstitution([
         FindPackageShare("niyantrak_description"),
@@ -27,9 +27,9 @@ def generate_launch_description():
     ])
 
     world_file = PathJoinSubstitution([
-        FindPackageShare("niyantrak_description"),
-        "world",
-        "charusat.world"
+        FindPackageShare("turtlebot3_gazebo"),
+        "worlds",
+        "turtlebot3_house.world"
     ])
 
     # Define the launch description
@@ -45,13 +45,13 @@ def generate_launch_description():
         ),
 
         # Uncomment to use RViz
-        Node(
-            package='rviz2',
-            executable='rviz2',
-            name='rviz2',
-            output='screen',
-            arguments=['-d', rviz_config_path]
-        ),
+        # Node(
+        #     package='rviz2',
+        #     executable='rviz2',
+        #     name='rviz2',
+        #     output='screen',
+        #     arguments=['-d', rviz_config_path]
+        # ),
 
         # Include Gazebo launch file
         IncludeLaunchDescription(
@@ -69,7 +69,7 @@ def generate_launch_description():
         Node(
             package="gazebo_ros",
             executable="spawn_entity.py",
-            arguments=['-topic', 'robot_description', '-entity', 'my_robot'],
+            arguments=['-topic', 'robot_description', '-entity', 'my_robot','-x', '1.0', '-y', '-5.0','-z', '0.1'],
             output='screen'
         ),
 

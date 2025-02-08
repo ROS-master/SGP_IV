@@ -4,6 +4,8 @@
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/lidar.xacro
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//urdf/my_robot.urdf.xacro
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//launch/display.launch.py
+/home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//launch/map.launch.py
+/home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//launch/nav.launch.py
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//rviz/urdf.rviz
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat.world
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/boundry/model.config
@@ -11,6 +13,8 @@
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/model.config
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/model.sdf
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/test_world.world
+/home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/turtlebot3_house.world
+/home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//param/robo.yaml
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//config/gazebo_params.yaml
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/ament_index/resource_index/package_run_dependencies/niyantrak_description
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/ament_index/resource_index/parent_prefix_path/niyantrak_description
