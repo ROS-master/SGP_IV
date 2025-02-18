@@ -30,6 +30,7 @@ _colcon_prefix_chain_powershell_source_script "/home/yash/ros2_ws/install\local_
 _colcon_prefix_chain_powershell_source_script "/home/yash/rl_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/yash/tensor_ws/install\local_setup.ps1"
 _colcon_prefix_chain_powershell_source_script "/home/yash/Agrobot/agri_ws/install\local_setup.ps1"
+_colcon_prefix_chain_powershell_source_script "/home/yash/bumperbot_ws/install\local_setup.ps1"
 
 # source this prefix
 $env:COLCON_CURRENT_PREFIX=(Split-Path $PSCommandPath -Parent)
