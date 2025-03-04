@@ -1,1 +1,0 @@
-/home/yash/SGP_IV/gesture_ws/src/gesture_control/setup.py

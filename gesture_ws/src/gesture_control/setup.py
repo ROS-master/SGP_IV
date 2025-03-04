@@ -22,7 +22,8 @@ setup(
     entry_points={
         'console_scripts': [
             "gesture_detect = gesture_control.gesture_detect:main",
-            "gesture_control = gesture_control.gesture_control:main"
+            "gesture_control = gesture_control.gesture_control:main",
+            "object_detector = gesture_control.object_detector:main"
         ],
     },
 )
