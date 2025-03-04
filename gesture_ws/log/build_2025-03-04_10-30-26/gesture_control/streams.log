@@ -1,0 +1,22 @@
+[3.901s] Invoking command in '/home/yash/SGP_IV/gesture_ws/build/gesture_control': PYTHONPATH=/home/yash/SGP_IV/gesture_ws/build/gesture_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yash/SGP_IV/gesture_ws/build/gesture_control/build --no-deps symlink_data --force
+[5.746s] running develop
+[7.163s] running egg_info
+[7.164s] writing gesture_control.egg-info/PKG-INFO
+[7.165s] writing dependency_links to gesture_control.egg-info/dependency_links.txt
+[7.166s] writing entry points to gesture_control.egg-info/entry_points.txt
+[7.167s] writing requirements to gesture_control.egg-info/requires.txt
+[7.167s] writing top-level names to gesture_control.egg-info/top_level.txt
+[7.187s] reading manifest file 'gesture_control.egg-info/SOURCES.txt'
+[7.190s] writing manifest file 'gesture_control.egg-info/SOURCES.txt'
+[7.197s] running build_ext
+[7.198s] Creating /home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/python3.10/site-packages/gesture-control.egg-link (link to .)
+[7.201s] Installing gesture_control script to /home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/gesture_control
+[7.202s] Installing gesture_detect script to /home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/gesture_control
+[7.202s] Installing object_detector script to /home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/gesture_control
+[7.203s] 
+[7.204s] Installed /home/yash/SGP_IV/gesture_ws/build/gesture_control
+[7.205s] running symlink_data
+[7.205s] symbolically linking /home/yash/SGP_IV/gesture_ws/build/gesture_control/resource/gesture_control -> /home/yash/SGP_IV/gesture_ws/install/gesture_control/share/ament_index/resource_index/packages
+[7.206s] symbolically linking /home/yash/SGP_IV/gesture_ws/build/gesture_control/package.xml -> /home/yash/SGP_IV/gesture_ws/install/gesture_control/share/gesture_control
+[7.206s] symbolically linking /home/yash/SGP_IV/gesture_ws/build/gesture_control/launch/control.launch.py -> /home/yash/SGP_IV/gesture_ws/install/gesture_control/share/gesture_control/launch
+[7.340s] Invoked command in '/home/yash/SGP_IV/gesture_ws/build/gesture_control' returned '0': PYTHONPATH=/home/yash/SGP_IV/gesture_ws/build/gesture_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yash/SGP_IV/gesture_ws/build/gesture_control/build --no-deps symlink_data --force
