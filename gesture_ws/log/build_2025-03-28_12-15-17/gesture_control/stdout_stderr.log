@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing gesture_control.egg-info/PKG-INFO
+writing dependency_links to gesture_control.egg-info/dependency_links.txt
+writing entry points to gesture_control.egg-info/entry_points.txt
+writing requirements to gesture_control.egg-info/requires.txt
+writing top-level names to gesture_control.egg-info/top_level.txt
+reading manifest file 'gesture_control.egg-info/SOURCES.txt'
+writing manifest file 'gesture_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/python3.10/site-packages/gesture-control.egg-link (link to .)
+Installing gesture_control script to /home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/gesture_control
+Installing gesture_detect script to /home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/gesture_control
+Installing object_detector script to /home/yash/SGP_IV/gesture_ws/install/gesture_control/lib/gesture_control
+
+Installed /home/yash/SGP_IV/gesture_ws/build/gesture_control
+running symlink_data
+symbolically linking /home/yash/SGP_IV/gesture_ws/build/gesture_control/resource/gesture_control -> /home/yash/SGP_IV/gesture_ws/install/gesture_control/share/ament_index/resource_index/packages
+symbolically linking /home/yash/SGP_IV/gesture_ws/build/gesture_control/package.xml -> /home/yash/SGP_IV/gesture_ws/install/gesture_control/share/gesture_control
+symbolically linking /home/yash/SGP_IV/gesture_ws/build/gesture_control/launch/control.launch.py -> /home/yash/SGP_IV/gesture_ws/install/gesture_control/share/gesture_control/launch

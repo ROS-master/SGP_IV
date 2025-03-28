@@ -65,87 +65,97 @@
 # if __name__ == "__main__":
 #     main()
 
-
-#!/usr/bin/env python3 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String, Bool
+from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
+from std_msgs.msg import String
 
-class GestureControlNode(Node):
+class GestureControl(Node):
     def __init__(self):
-        super().__init__('gesture_control_node')
-
+        super().__init__('gesture_control')
+        
         # Subscribers
-        self.subscription_gesture = self.create_subscription(String, '/gesture', self.gesture_callback, 10)
-        self.subscription_status = self.create_subscription(String, '/robot_status', self.status_callback, 10)
-        self.subscription_object = self.create_subscription(Bool, '/object_detected', self.object_callback, 10)
+        self.gesture_subscriber = self.create_subscription(
+            String, '/gesture_command', self.gesture_callback, 10)
+        
+        self.lidar_subscriber = self.create_subscription(
+            LaserScan, '/scan', self.lidar_callback, 10)
+        
+        # Publisher for velocity commands
+        self.velocity_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
+        
+        # Movement Restrictions
+        self.obstacle_front = False
+        self.obstacle_left = False
+        self.obstacle_right = False
+        self.stop_threshold = 0.5  # Distance threshold for obstacles
+        self.current_gesture = "Stop"
 
-        # Publisher
-        self.publisher_cmd = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.get_logger().info("Gesture Control Node Initialized.")
 
-        # Robot State
-        self.robot_status = "Locked"  # Default to locked
-        self.last_gesture = "Stop"    # Default gesture
-        self.object_near = False      # Object detection flag
+    def lidar_callback(self, msg):
+        """ Continuously updates obstacle status based on LiDAR scan data. """
+        front_range = msg.ranges[len(msg.ranges) // 2]  # Front center
+        left_range = msg.ranges[int(len(msg.ranges) * 0.75)]  # Left side
+        right_range = msg.ranges[int(len(msg.ranges) * 0.25)]  # Right side
 
-    def status_callback(self, msg):
-        """Update the robot's lock/unlock status."""
-        self.robot_status = msg.data
-        self.get_logger().info(f"Robot Status Updated: {self.robot_status}")
+        # Check for obstacles
+        self.obstacle_front = front_range < self.stop_threshold
+        self.obstacle_left = left_range < self.stop_threshold
+        self.obstacle_right = right_range < self.stop_threshold
+        
+        self.get_logger().info(f"🔍 LiDAR - Front: {self.obstacle_front}, Left: {self.obstacle_left}, Right: {self.obstacle_right}")
+
+        # Update movement based on the latest LiDAR data
+        self.execute_movement()
 
     def gesture_callback(self, msg):
-        """Store the latest gesture for processing."""
-        self.last_gesture = msg.data
-        self.get_logger().info(f"Gesture Status Updated: {self.last_gesture}")
-        self.publish_velocity()
+        """ Updates the current gesture command and executes movement. """
+        self.current_gesture = msg.data
+        self.get_logger().info(f"🖐 Gesture received: {self.current_gesture}")
 
-    def object_callback(self, msg):
-        """Update the object detection status."""
-        self.object_near = msg.data
-        self.get_logger().info(f"Object Detection: {'Detected' if self.object_near else 'Clear'}")
-        self.publish_velocity()
+        # Execute movement based on gesture and obstacle status
+        self.execute_movement()
 
-    def publish_velocity(self):
-        """Publish velocity commands based on gesture and object detection."""
+    def execute_movement(self):
+        """ Executes movement based on gesture and obstacle detection. """
         twist = Twist()
 
-        if self.robot_status == "Locked":
-            self.get_logger().info("Robot is Locked. No movement.")
-            twist.linear.x = 0.0
-            twist.angular.z = 0.0
-        elif self.object_near:
-            self.get_logger().info("Object Detected! Stopping robot.")
-            twist.linear.x = 0.0
-            twist.angular.z = 0.0
-        else:
-            if self.last_gesture == "Forward":
-                twist.linear.x = 0.5
-                twist.angular.z = 0.0
-            elif self.last_gesture == "Backward":
-                twist.linear.x = -0.5
-                twist.angular.z = 0.0
-            elif self.last_gesture == "Left":
-                twist.linear.x = 0.0
-                twist.angular.z = 0.5
-            elif self.last_gesture == "Right":
-                twist.linear.x = 0.0
-                twist.angular.z = -0.5
+        if self.current_gesture == "Forward":
+            if self.obstacle_front:
+                self.get_logger().info("🚫 Obstacle in Front! Cannot move forward.")
             else:
-                # Default to stop for unknown gestures
-                twist.linear.x = 0.0
-                twist.angular.z = 0.0
+                twist.linear.x = 0.5  # Move forward
 
-        # Publish the velocity command
-        self.publisher_cmd.publish(twist)
+        elif self.current_gesture == "Backward":
+            twist.linear.x = -0.5  # Always allowed to move backward
+
+        elif self.current_gesture == "Left":
+            if self.obstacle_left:
+                self.get_logger().info("🚫 Obstacle on Left! Cannot turn left.")
+            else:
+                twist.angular.z = 0.5  # Turn left
+
+        elif self.current_gesture == "Right":
+            if self.obstacle_right:
+                self.get_logger().info("🚫 Obstacle on Right! Cannot turn right.")
+            else:
+                twist.angular.z = -0.5  # Turn right
+
+        else:
+            twist.linear.x = 0.0
+            twist.angular.z = 0.0  # Stop the robot
+
+        self.velocity_publisher.publish(twist)
+        self.get_logger().info(f"🚀 Executing: {self.current_gesture}")
 
 def main(args=None):
     rclpy.init(args=args)
-    control_node = GestureControlNode()
-    rclpy.spin(control_node)  # Spin until shutdown
-    control_node.destroy_node()
+    node = GestureControl()
+    rclpy.spin(node)
+    node.destroy_node()
     rclpy.shutdown()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
-

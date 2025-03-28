@@ -12,8 +12,12 @@ gesture_control/__init__.py
 gesture_control/gesture_control.py
 gesture_control/gesture_detect.py
 gesture_control/object_detector.py
+gesture_control.egg-info/PKG-INFO
+gesture_control.egg-info/SOURCES.txt
+gesture_control.egg-info/dependency_links.txt
+gesture_control.egg-info/entry_points.txt
+gesture_control.egg-info/requires.txt
+gesture_control.egg-info/top_level.txt
+gesture_control.egg-info/zip-safe
 launch/control.launch.py
 resource/gesture_control
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
