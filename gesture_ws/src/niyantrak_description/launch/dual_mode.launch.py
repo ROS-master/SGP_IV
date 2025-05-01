@@ -10,25 +10,25 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    # Arguments for enabling/disabling features
+
     enable_autonomous = LaunchConfiguration('enable_autonomous', default='true')
     enable_gesture_control = LaunchConfiguration('enable_gesture_control', default='false')
 
-    # Get package directories
+
     niyantrak_dir = get_package_share_directory('niyantrak_description')
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
 
-    # Paths to required files
+
     map_file = os.path.join(niyantrak_dir, 'map', 'bounded.yaml')
     param_file = os.path.join(niyantrak_dir, 'param', 'robo.yaml')
     rviz_config_file = os.path.join(nav2_bringup_dir, 'rviz', 'nav2_default_view.rviz')
 
-    # Launch display.launch.py first
+
     display_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(niyantrak_dir, 'launch', 'display.launch.py'))
     )
 
-    # Navigation launch
+ 
     navigation_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(nav2_bringup_dir, 'launch', 'bringup_launch.py')),
         launch_arguments={
@@ -36,10 +36,9 @@ def generate_launch_description():
             'use_sim_time': 'true',
             'params_file': param_file
         }.items(),
-        condition=IfCondition(enable_autonomous)  # Only launch if autonomous mode is enabled
+        condition=IfCondition(enable_autonomous) 
     )
 
-    # RViz for visualization
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
@@ -49,13 +48,12 @@ def generate_launch_description():
         output='screen'
     )
 
-    # Gesture detection and control nodes
     gesture_detect_node = Node(
         package='gesture_control',
         executable='gesture_detect',
         name='gesture_detect',
         output='screen',
-        condition=IfCondition(enable_gesture_control)  # Only launch if gesture control is enabled
+        condition=IfCondition(enable_gesture_control)  
     )
 
     gesture_control_node = Node(
@@ -66,9 +64,8 @@ def generate_launch_description():
         condition=IfCondition(enable_gesture_control)
     )
 
-    # Log information about what is being launched
-    log_autonomous = LogInfo(condition=IfCondition(enable_autonomous), msg="🚀 Launching Autonomous Navigation")
-    log_gesture = LogInfo(condition=IfCondition(enable_gesture_control), msg="✋ Launching Gesture Control")
+    log_autonomous = LogInfo(condition=IfCondition(enable_autonomous), msg="Launching Autonomous Navigation")
+    log_gesture = LogInfo(condition=IfCondition(enable_gesture_control), msg="Launching Gesture Control")
 
     return LaunchDescription([
         DeclareLaunchArgument('enable_autonomous', default_value='true', description="Enable autonomous navigation"),

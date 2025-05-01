@@ -28,7 +28,6 @@ def generate_launch_description():
         gesture_detect_node,
         gesture_control_node,
         # obj_detection_node,
-        # Ensure gesture_control stops if gesture_detect exits
         RegisterEventHandler(
             OnProcessExit(
                 target_action=gesture_detect_node,

@@ -19,14 +19,7 @@
     <gazebo reference="left_front_wheel_link">
         <material> Gazebo/Grey </material>
     </gazebo>
-<!-- 
-    <gazebo reference="right_middle_wheel_link">
-        <material> Gazebo/White </material>
-    </gazebo>
 
-    <gazebo reference="left_middle_wheel_link">
-        <material> Gazebo/White </material>
-    </gazebo> -->
 
     <gazebo>
         <plugin name="diff_drive_1" filename="libgazebo_ros_diff_drive.so">

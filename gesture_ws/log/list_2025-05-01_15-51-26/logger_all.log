@@ -1,0 +1,66 @@
+[1.270s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/yash/SGP_IV/gesture_ws']
+[1.271s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/yash/SGP_IV/gesture_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b2356dc2860>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7b2356d433a0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7b2356d433a0>>, mixin_verb=('list',))
+[3.683s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.683s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.684s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.684s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.684s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.685s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yash/SGP_IV/gesture_ws'
+[3.685s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extensions ['ignore', 'ignore_ament_install']
+[3.686s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extension 'ignore'
+[3.687s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extension 'ignore_ament_install'
+[3.687s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extensions ['colcon_pkg']
+[3.688s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extension 'colcon_pkg'
+[3.688s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extensions ['colcon_meta']
+[3.688s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extension 'colcon_meta'
+[3.690s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extensions ['ros']
+[3.690s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extension 'ros'
+[3.794s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extensions ['cmake', 'python']
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extension 'cmake'
+[3.795s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extension 'python'
+[3.796s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extensions ['python_setup_py']
+[3.797s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws) by extension 'python_setup_py'
+[3.798s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[3.798s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/build) by extension 'ignore'
+[3.799s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/build) ignored
+[3.800s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[3.801s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/install) by extension 'ignore'
+[3.802s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/install) ignored
+[3.803s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[3.804s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/log) by extension 'ignore'
+[3.804s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/log) ignored
+[3.805s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[3.806s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extension 'ignore'
+[3.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extension 'ignore_ament_install'
+[3.807s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extensions ['colcon_pkg']
+[3.808s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extension 'colcon_pkg'
+[3.809s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extensions ['colcon_meta']
+[3.809s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extension 'colcon_meta'
+[3.810s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extensions ['ros']
+[3.810s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extension 'ros'
+[3.811s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extensions ['cmake', 'python']
+[3.812s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extension 'cmake'
+[3.812s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extension 'python'
+[3.813s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extensions ['python_setup_py']
+[3.813s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src) by extension 'python_setup_py'
+[3.815s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/gesture_control) by extensions ['ignore', 'ignore_ament_install']
+[3.815s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/gesture_control) by extension 'ignore'
+[3.816s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/gesture_control) by extension 'ignore_ament_install'
+[3.817s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/gesture_control) by extensions ['colcon_pkg']
+[3.817s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/gesture_control) by extension 'colcon_pkg'
+[3.818s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/gesture_control) by extensions ['colcon_meta']
+[3.818s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/gesture_control) by extension 'colcon_meta'
+[3.819s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/gesture_control) by extensions ['ros']
+[3.819s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/gesture_control) by extension 'ros'
+[3.842s] DEBUG:colcon.colcon_core.package_identification:Package '/home/yash/SGP_IV/gesture_ws/src/gesture_control' with type 'ros.ament_python' and name 'gesture_control'
+[3.843s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/niyantrak_description) by extensions ['ignore', 'ignore_ament_install']
+[3.844s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/niyantrak_description) by extension 'ignore'
+[3.845s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/niyantrak_description) by extension 'ignore_ament_install'
+[3.845s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/niyantrak_description) by extensions ['colcon_pkg']
+[3.846s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/niyantrak_description) by extension 'colcon_pkg'
+[3.846s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/niyantrak_description) by extensions ['colcon_meta']
+[3.846s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/niyantrak_description) by extension 'colcon_meta'
+[3.847s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/niyantrak_description) by extensions ['ros']
+[3.848s] Level 1:colcon.colcon_core.package_identification:_identify(/home/yash/SGP_IV/gesture_ws/src/niyantrak_description) by extension 'ros'
+[3.854s] DEBUG:colcon.colcon_core.package_identification:Package '/home/yash/SGP_IV/gesture_ws/src/niyantrak_description' with type 'ros.ament_cmake' and name 'niyantrak_description'
+[3.854s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

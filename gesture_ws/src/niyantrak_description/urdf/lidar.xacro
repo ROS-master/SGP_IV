@@ -31,7 +31,7 @@
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
         <inertial>
-            <mass value="${m}" /> <!-- Example mass in kg -->
+            <mass value="${m}" /> 
             <inertia
                 ixx="${(m/12) * (3*r*r + L*L)}" 
                 iyy="${(m/12) * (3*r*r + L*L)}" 

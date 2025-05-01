@@ -3,22 +3,15 @@ from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import Command, PathJoinSubstitution
-from launch_ros.substitutions import FindPackageShare  # Use from launch_ros
+from launch_ros.substitutions import FindPackageShare 
 
 def generate_launch_description():
 
-    # Define paths to URDF, RViz, Gazebo files
     urdf_path = PathJoinSubstitution([
         FindPackageShare("niyantrak_description"),
         "urdf",
         "my_robot.urdf.xacro"
     ])
-    
-    # rviz_config_path = PathJoinSubstitution([
-    #     FindPackageShare("niyantrak_description"),
-    #     "rviz",
-    #     "urdf.rviz"
-    # ])
     
     gazebo_params_file = PathJoinSubstitution([
         FindPackageShare("niyantrak_description"),
@@ -32,9 +25,7 @@ def generate_launch_description():
         "turtlebot3_house.world"
     ])
 
-    # Define the launch description
     return LaunchDescription([
-        # Robot state publisher node
         Node(
             package="robot_state_publisher",
             executable="robot_state_publisher",
@@ -44,16 +35,6 @@ def generate_launch_description():
             }]
         ),
 
-        # Uncomment to use RViz
-        # Node(
-        #     package='rviz2',
-        #     executable='rviz2',
-        #     name='rviz2',
-        #     output='screen',
-        #     arguments=['-d', rviz_config_path]
-        # ),
-
-        # Include Gazebo launch file
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([PathJoinSubstitution([
                 FindPackageShare('gazebo_ros'),
@@ -65,7 +46,6 @@ def generate_launch_description():
             }.items(),
         ),
 
-        # Spawn entity in Gazebo
         Node(
             package="gazebo_ros",
             executable="spawn_entity.py",
@@ -73,7 +53,6 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # Spawner nodes for controllers
         Node(
             package="controller_manager",
             executable="spawner",

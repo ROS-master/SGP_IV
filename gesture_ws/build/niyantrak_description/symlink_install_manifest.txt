@@ -15,6 +15,8 @@
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/charusat/model.sdf
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/test_world.world
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//world/turtlebot3_house.world
+/home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//map/house_map.pgm
+/home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//map/house_map.yaml
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//param/robo.yaml
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/niyantrak_description//config/gazebo_params.yaml
 /home/yash/SGP_IV/gesture_ws/install/niyantrak_description/share/ament_index/resource_index/package_run_dependencies/niyantrak_description
